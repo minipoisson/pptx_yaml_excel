@@ -1,0 +1,19 @@
+# Work artifacts
+done/
+
+# Translation/source artifacts (do not commit working files)
+*.yaml
+*.yml
+*.ppt
+*.pptx
+*.pptm
+*.potx
+*.potm
+
+# Office temp/lock files
+~$*.ppt*
+~$*.xls*
+
+# OS junk
+Thumbs.db
+.DS_Store
