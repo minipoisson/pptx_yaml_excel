@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-05-06
+
 ### Changed
 - Synced repository files for workbook update: `pptx_yaml_i18n.xlsm`, `sheet/Sheet2.md`, `sheet/Sheet4.md`, and `sheet/Sheet5.md`
 
@@ -26,6 +28,7 @@ All notable changes to this project will be documented in this file.
 - Main sheet protection (UI-only) reapplied on each open
 - Apply report: applied keys, PowerPoint-only keys, YAML-only keys, malformed lines
 
-[Unreleased]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/minipoisson/pptx_yaml_excel/releases/tag/v1.0.0
