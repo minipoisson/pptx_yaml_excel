@@ -16,6 +16,16 @@ This repository uses the following default release policy.
   - release page exists
   - release includes asset pptx_yaml_i18n.xlsm
 
+## Release decision rule
+
+- Create a new release when users should download a new workbook.
+- In this repository, treat these as release-worthy by default:
+  - Changes that modify behavior, UI, import/export results, or compatibility.
+  - Any update to the distributed workbook file (`pptx_yaml_i18n.xlsm`).
+- Do not create a release for repository-only maintenance updates:
+  - Developer workflow docs, agent instructions, CI/config cleanup, or internal notes.
+- If uncertain, ask the user whether this change should be user-facing and therefore released.
+
 ## Standard execution sequence
 
 1. Show git status --short and candidate file list.
