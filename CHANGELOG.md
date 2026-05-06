@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.4] - 2026-05-07
+
+### Changed
+- Updated `xlsm_devkit` integration so `ImportAllModules` no longer depends on the active VBE code pane being `xlsm_devkit`
+- Synced workbook update in `pptx_yaml_i18n.xlsm` for the revised import workflow
+- Added exported `src/Sheet4.bas` to match the current workbook project
+
 ## [1.0.3] - 2026-05-07
 
 ### Changed
