@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-05-06
+
+### Changed
+- Refreshed `README` and `README.ja` sheets in the workbook with up-to-date content
+- Added `LICENSE` sheet to the workbook
+
 ## [1.0.0] - 2026-05-05
 
 ### Added
@@ -17,5 +23,6 @@ All notable changes to this project will be documented in this file.
 - Main sheet protection (UI-only) reapplied on each open
 - Apply report: applied keys, PowerPoint-only keys, YAML-only keys, malformed lines
 
-[Unreleased]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/minipoisson/pptx_yaml_excel/releases/tag/v1.0.0
