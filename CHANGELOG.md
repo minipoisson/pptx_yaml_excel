@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-05-07
+
+### Changed
+- Simplified Sheet1 formulas in workbook (`pptx_yaml_i18n.xlsm`)
+- Updated `sheet/Sheet1.md` to reflect formula changes
+
 ## [1.0.2] - 2026-05-06
 
 ### Changed
