@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+- Synced repository files for workbook update: `pptx_yaml_i18n.xlsm`, `sheet/Sheet2.md`, `sheet/Sheet4.md`, and `sheet/Sheet5.md`
+
 ## [1.0.1] - 2026-05-06
 
 ### Changed
