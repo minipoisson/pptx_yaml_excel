@@ -17,3 +17,6 @@ done/
 # OS junk
 Thumbs.db
 .DS_Store
+
+# Development artifacts
+DEV_*.xlsm

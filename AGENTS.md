@@ -1,5 +1,26 @@
 # Agent Instructions for Release Operations
 
+## DEV/release workflow
+
+Development is done in `DEV_pptx_yaml_i18n.xlsm` (excluded from version control via `.gitignore`).
+The committed `pptx_yaml_i18n.xlsm` is always a clean release build with no devkit modules.
+
+### Starting development
+
+1. Open `pptx_yaml_i18n.xlsm`.
+2. Run `CallInitDevMode` → creates `DEV_pptx_yaml_i18n.xlsm` and imports all `devkit_*` modules from `src/`.
+3. Close the original without saving; continue work in the `DEV_` workbook.
+
+### Syncing source files
+
+Run `ExportAllModulesFormsSheetMaps` (or use the Launcher) to update `src/` and `sheet/`.
+
+### Creating a release build
+
+Run `CallSaveAsRelease` from the `DEV_` workbook → generates a clean `pptx_yaml_i18n.xlsm` with all devkit modules removed. This file is the release artifact to commit and upload.
+
+---
+
 This repository uses the following default release policy.
 
 ## Default policy

@@ -82,10 +82,37 @@ Main シートはアプリの UI として機能します。セル番地によ�
 
 ## 開発環境
 
-このプロジェクトは [xlsm_devkit](https://github.com/minipoisson/xlsm_devkit) を使って開発しました。xlsm_devkit は Excel VBA プロジェクト向けの開発支援ツールキットです。
+このプロジェクトは [xlsm_devkit](https://github.com/minipoisson/xlsm_devkit) v1.6.0 を使って開発しています。
 
-- `src/*.bas` — xlsm_devkit の `ExportAllModules`・`ImportAllModules` マクロで管理する VBA モジュール（UTF-8）
-- `sheet/*.md` — xlsm_devkit の `ExportAllSheetMapsToMD` マクロで出力したシートマップ（Markdown）
+### リポジトリ構成
+
+| パス | 内容 |
+| :--- | :--- |
+| `src/xlsm_devkit.bas` | devkit のコアモジュール |
+| `src/devkit_Launch.bas`、`devkit_frmLauncher.*` | Launcher オプションモジュール——使用例として同梱 |
+| `src/*.bas` | アプリケーションの VBA モジュール |
+| `sheet/*.md` | xlsm_devkit が出力したシートマップ |
+| `lang/` | devkit UI の言語リソース: en, ja, fr, de, zh-CN, zh-TW（27 言語中 6 言語） |
+
+同梱しているオプションモジュールは Launcher のみです。その他のオプションモジュール（[InsertDelete、Move](https://github.com/minipoisson/xlsm_devkit/tree/main/src)）と [27 言語のフルセット](https://github.com/minipoisson/xlsm_devkit/tree/main/lang)は xlsm_devkit リポジトリで公開しています。
+
+### DEV/release ワークフロー
+
+コミット済みの `pptx_yaml_i18n.xlsm` は devkit モジュールを含まないリリース用ファイルです。開発は `.gitignore` で除外された `DEV_` プレフィックス付きのワークブックで行います。
+
+**開発開始:**
+
+1. `pptx_yaml_i18n.xlsm` を開く。
+2. `CallInitDevMode` を実行 → `DEV_pptx_yaml_i18n.xlsm` が生成され、`src/` 内の `devkit_*` モジュールがインポートされます。
+3. 元ファイルを保存せずに閉じ、`DEV_` ワークブックで作業を続けます。
+
+**ソースファイルへの同期:**
+
+`ExportAllModulesFormsSheetMaps` を実行（または Launcher を使用）して `src/` と `sheet/` を更新します。
+
+**リリースビルドの作成:**
+
+`DEV_` ワークブックで `CallSaveAsRelease` を実行 → devkit モジュールをすべて除いたクリーンな `pptx_yaml_i18n.xlsm` が生成されます。
 
 ### 前提条件
 

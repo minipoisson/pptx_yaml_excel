@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.5] - 2026-06-10
+
+### Added
+- Adopted xlsm_devkit v1.6.0 DEV/release workflow (`CallInitDevMode` / `CallSaveAsRelease`)
+- Added Launcher optional module (`src/devkit_Launch.bas` and form files) as a devkit usage example
+- Added `lang/` with devkit UI language resources for 6 languages (en, ja, fr, de, zh-CN, zh-TW)
+- Added `.gitattributes` to enforce CRLF line endings for VBA source files
+- Added `.agent/workflows/guidelines.md` following xlsm_devkit project conventions
+
+### Changed
+- `pptx_yaml_i18n.xlsm` is now a clean release build with no devkit modules embedded
+- Re-exported `sheet/Sheet*.md` with the updated xlsm_devkit
+
 ## [1.0.4] - 2026-05-07
 
 ### Changed
@@ -41,7 +54,10 @@ All notable changes to this project will be documented in this file.
 - Main sheet protection (UI-only) reapplied on each open
 - Apply report: applied keys, PowerPoint-only keys, YAML-only keys, malformed lines
 
-[Unreleased]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.5...HEAD
+[1.0.5]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.4...v1.0.5
+[1.0.4]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.3...v1.0.4
+[1.0.3]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/minipoisson/pptx_yaml_excel/releases/tag/v1.0.0
