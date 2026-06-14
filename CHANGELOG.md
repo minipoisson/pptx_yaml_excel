@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.6] - 2026-06-14
+
 ### Changed
 - Updated bundled `src/xlsm_devkit.bas` from xlsm_devkit v1.6.0 to v1.12.0 and verified the included Launcher files and 6 language resources match upstream
 - Added `xlsm_devkit.ini` as a selective-import sample for the updated devkit workflow
@@ -59,7 +61,8 @@ All notable changes to this project will be documented in this file.
 - Main sheet protection (UI-only) reapplied on each open
 - Apply report: applied keys, PowerPoint-only keys, YAML-only keys, malformed lines
 
-[Unreleased]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.5...HEAD
+[Unreleased]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.6...HEAD
+[1.0.6]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.5...v1.0.6
 [1.0.5]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/minipoisson/pptx_yaml_excel/compare/v1.0.2...v1.0.3
