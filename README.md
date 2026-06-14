@@ -82,7 +82,7 @@ If macros are disabled, this runtime re-apply step will not run.
 
 ## Development
 
-This project is developed with [xlsm_devkit](https://github.com/minipoisson/xlsm_devkit) v1.6.0.
+This project is developed with [xlsm_devkit](https://github.com/minipoisson/xlsm_devkit) v1.12.0.
 
 ### Repository layout
 
@@ -93,6 +93,7 @@ This project is developed with [xlsm_devkit](https://github.com/minipoisson/xlsm
 | `src/*.bas` | Application VBA modules |
 | `sheet/*.md` | Sheet maps exported by xlsm_devkit |
 | `lang/` | Devkit UI language resources: en, ja, fr, de, zh-CN, zh-TW (6 of 27 languages) |
+| `xlsm_devkit.ini` | Sample selective-import settings for xlsm_devkit v1.10+ |
 
 Only the Launcher module is included here. The other optional modules ([InsertDelete, Move](https://github.com/minipoisson/xlsm_devkit/tree/main/src)) and the [full set of 27 language files](https://github.com/minipoisson/xlsm_devkit/tree/main/lang) are available in the xlsm_devkit repository.
 
@@ -109,6 +110,10 @@ The committed `pptx_yaml_i18n.xlsm` is a clean release build — it contains no 
 **Syncing source files:**
 
 Run `ExportAllModulesFormsSheetMaps` (or use the Launcher) to update `src/` and `sheet/`.
+
+The devkit writes `sheet/xlsm_devkit_sync.tsv` as a local sync cache for unchanged sheet-map imports. It is intentionally ignored by git.
+
+`xlsm_devkit.ini` is included as the upstream selective-import sample. It preserves existing visual styles, hidden rows/columns, shapes, and merge structure during sheet-map import unless those categories are explicitly enabled.
 
 **Creating a release build:**
 

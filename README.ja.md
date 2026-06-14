@@ -82,7 +82,7 @@ Main シートはアプリの UI として機能します。セル番地によ�
 
 ## 開発環境
 
-このプロジェクトは [xlsm_devkit](https://github.com/minipoisson/xlsm_devkit) v1.6.0 を使って開発しています。
+このプロジェクトは [xlsm_devkit](https://github.com/minipoisson/xlsm_devkit) v1.12.0 を使って開発しています。
 
 ### リポジトリ構成
 
@@ -93,6 +93,7 @@ Main シートはアプリの UI として機能します。セル番地によ�
 | `src/*.bas` | アプリケーションの VBA モジュール |
 | `sheet/*.md` | xlsm_devkit が出力したシートマップ |
 | `lang/` | devkit UI の言語リソース: en, ja, fr, de, zh-CN, zh-TW（27 言語中 6 言語） |
+| `xlsm_devkit.ini` | xlsm_devkit v1.10+ の選択インポート設定サンプル |
 
 同梱しているオプションモジュールは Launcher のみです。その他のオプションモジュール（[InsertDelete、Move](https://github.com/minipoisson/xlsm_devkit/tree/main/src)）と [27 言語のフルセット](https://github.com/minipoisson/xlsm_devkit/tree/main/lang)は xlsm_devkit リポジトリで公開しています。
 
@@ -109,6 +110,10 @@ Main シートはアプリの UI として機能します。セル番地によ�
 **ソースファイルへの同期:**
 
 `ExportAllModulesFormsSheetMaps` を実行（または Launcher を使用）して `src/` と `sheet/` を更新します。
+
+devkit は、変更のないシートマップの import をスキップするために `sheet/xlsm_devkit_sync.tsv` をローカルキャッシュとして書き出します。このファイルは git 管理対象外です。
+
+`xlsm_devkit.ini` は上流版の選択的なシートマップ import 設定サンプルとして同梱しています。明示的に有効化しない限り、既存の表示スタイル、非表示行・列、図形、結合セル構造を保持します。
 
 **リリースビルドの作成:**
 

@@ -20,3 +20,6 @@ Thumbs.db
 
 # Development artifacts
 DEV_*.xlsm
+SESSION_BOOTSTRAP.md
+devkit_import_diagnostics.log
+sheet/xlsm_devkit_sync.tsv
